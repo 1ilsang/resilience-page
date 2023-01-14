@@ -83,7 +83,21 @@ const Questions: FunctionComponent = () => {
       return [...prev];
     });
   };
+  const clearState = () => {
+    setEmotion(0);
+    setImpulse(0);
+    setCause(0);
+
+    setCommunication(0);
+    setSympathy(0);
+    setEgoExtend(0);
+
+    setEgoOptimism(0);
+    setLifeSatisfaction(0);
+    setThankful(0);
+  };
   const handleSubmitClick = () => {
+    clearState();
     scoreList.forEach((originScore, index) => {
       const no = index + 1;
       const score = reverseQuestionList.includes(no)
@@ -115,18 +129,7 @@ const Questions: FunctionComponent = () => {
   const handleResetClick = () => {
     window.localStorage.removeItem(LOCAL_STORAGE_KEY);
     setScoreList([...Array(QUESTION_COUNT).fill(0)]);
-
-    setEmotion(0);
-    setImpulse(0);
-    setCause(0);
-
-    setCommunication(0);
-    setSympathy(0);
-    setEgoExtend(0);
-
-    setEgoOptimism(0);
-    setLifeSatisfaction(0);
-    setThankful(0);
+    clearState();
   };
   const questionList: number[][] = useMemo(
     () =>
