@@ -8,7 +8,7 @@ module.exports = {
   entry: path.resolve(__dirname, './src/App.tsx'),
   output: {
     filename: 'bundle.[fullhash].js',
-    path: path.resolve(__dirname, 'docs'),
+    path: path.resolve(__dirname, 'dist'),
     publicPath: '/',
   },
   module: {
