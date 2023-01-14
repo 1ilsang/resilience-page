@@ -17,7 +17,7 @@ const QuestionItem: FunctionComponent<QuestionItemProps> = ({
   };
 
   return (
-    <div style={{ padding: 4 }}>
+    <div style={{ padding: 4, width: 50 }}>
       No.{`${no + 1}`.padStart(2, '0')}:{' '}
       <input
         style={{ width: 20 }}
