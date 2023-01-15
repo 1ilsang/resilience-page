@@ -4,6 +4,6 @@
 
 > https://product.kyobobook.co.kr/detail/S000001933356
 
-<img width="642" alt="image" src="https://user-images.githubusercontent.com/23524849/212485834-817c70bf-542b-4dfd-a1de-fa5868e8b05b.png">
+<img width="607" alt="image" src="https://user-images.githubusercontent.com/23524849/212504592-1e2d614f-7f7c-4fa8-9406-acd2e3508fc1.png">
 
 LICENSE - MIT

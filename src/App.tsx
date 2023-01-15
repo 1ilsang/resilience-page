@@ -5,7 +5,14 @@ import Questions from '~/components/Questions';
 import './style/index.scss';
 
 const App: FunctionComponent = () => {
-  return <Questions />;
+  return (
+    <>
+      <h1>
+        <a href="https://github.com/1ilsang/resilience-page">Github</a>
+      </h1>
+      <Questions />
+    </>
+  );
 };
 
 const root = createRoot(document.getElementById('app') as Element);
